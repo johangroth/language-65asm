@@ -1,0 +1,27 @@
+# Extends the basic 6502 instruction set with the Rockwell 65c02 opcodes
+
+scopeName: 'source.65c02-opcodes-64tass'
+
+patterns: [
+  # The basic 6502 instruction set
+  {
+    include: 'source.6502-opcodes'
+  }
+  # The added 65c02 opcodes
+  {
+    include: '#mnemonics-65c02-64tass'
+  }
+]
+
+# Respository starts here -----------------------------------------------------
+repository:
+
+  # 65c02 instruction set extension
+  'mnemonics-65c02-64tass':
+    patterns: [
+      # mnemonics
+      {
+        match:  '\\b(?i:BBR|BBS|BRA|PHX|PHY|PLX|PLY|RMB|SMB|STP|STZ|TRB|TSB|WAI)\\b'
+        name:   'keyword.mnemonic.65c02.65c02-opcodes-64tass'
+      }
+    ]

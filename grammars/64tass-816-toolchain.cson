@@ -1,0 +1,14 @@
+# Syntax Highlighting for the 64tass toolchain and 65816 support
+
+scopeName: 'source.assembly.65816.64tass-816-toolchain'
+name: '65816 Assembly (64tass)'      # Name shown in Atom Editor grammar selection
+# File extensions associated with this grammar
+fileTypes: [
+  'asm'
+]
+# include all opcodes and directives the toolchain supports
+patterns: [
+  { include: 'source.65816-opcodes' }   # add basic 65816 instruction set, includes 6502 and 65c02 opcodes
+  { include: 'source.6502x-opcodes' }   # extend with 6502X opcodes
+  { include: 'source.64tass-directives' } # include the directives for the 64tass toolchain
+]

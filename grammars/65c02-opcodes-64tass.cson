@@ -21,7 +21,7 @@ repository:
     patterns: [
       # mnemonics
       {
-        match:  '\\b(?i:BBR|BBS|BRA|PHX|PHY|PLX|PLY|RMB|SMB|STP|STZ|TRB|TSB|WAI)\\b'
+        match:  '\\b(?i:BBR|BBS|BRA|DEA|INA|PHX|PHY|PLX|PLY|RMB|SMB|STP|STZ|TRB|TSB|WAI)\\b'
         name:   'keyword.mnemonic.65c02.65c02-opcodes-64tass'
       }
     ]

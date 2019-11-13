@@ -71,40 +71,29 @@ repository:
         match:  '(\\.)\\b(?i:\\*|asize|cpu|isize|paramcount|time|version)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
-      # 64tass pseudo functions
-      {
-        # match:  '(\\.)\\b(?i:addrsize|bank(byte)?|blank|con(cat|st)|(hi|lo)(byte|word)|ident|left|x?match|max|mi[dn]|ref(erenced)?|right|sizeof|strat|sprintf|str(ing|len)|tcount)\\b'
-        match:  '(\\.)\\b(?i:addrsize|bank(byte)?|blank|con(cat|st)|(hi|lo)(byte|word)|ident|left|x?match|max|mi[dn]|ref(erenced)?|right|sizeof|strat|sprintf|str(ing|len)|tcount)\\b'
-        name:   'support.function.pseudo.64tass-directives'
-      }
       # 64tass control commands, A through C
       {
-        # match:  '(\\.)\\b(?i:a(8|16)|addr|align|asciiz|assert|autoimport|(bank|hi)bytes|bss|byte?|case|charmap|code|condes|(con|de)structor)\\b'
         match:  '(\\.)\\b(?i:addr|al|align|as|assert|autsiz|bend|binary|bininclude|bfor|block|break|brept|byte|case|cdef|cerror|char|check|comment|continue|cpu|cwarn)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
       # 64tass control commands, D and E
       {
-        # match:  '(\\.)\\b(?i:data|dbyt|debuginfo|define|delmac(ro)?|def(ined(macro)?)?|dword|else(if)?|end(enum)?|end(enum|if|proc|rep(eat)?|scope|struct|union)?|endmac(ro)?|enum|error|exitmac(ro)?|export(zp)?)\\b'
         match:  '(\\.)\\b(?i:databank|default|dint|dpage|dsection|dstruct|dunion|dword|edef|else|elsif|enc|end|endc|endf|endif|endm|endn|endp|ends|endswitch|endu|endv|endweak|eor|error)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
       # 64tass control commands, F through I
       {
-        # match:  '(\\.)\\b(?i:faraddr|fatal|feature|f(ile)?opt|forceimport|global(zp)?|i(8|16)|if((n)?blank|const|(n)?def|(n)?ref|p02|p4510|p816|p(s)?c02)?|import(zp)?|inc(bin|lude)|interruptor|ismnem(onic)?)\\b'
         match:  '(\\.)\\b(?i:fi|fill|for|function|goto|here|hidemac|if|ifeq|ifmi|ifne|ifpl|include?)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
       # 64tass control commands, L through R
       {
-        # match:  '(\\.)\\b(?i:linecont|list(bytes)?|lobytes|local(char)?|macpack|mac(ro)?|org|out|p02|p4510|p816|pagelen(gth)?|pc02|pop(cpu|seg)|proc|psc02|push(cpu|seg)|reloc|repeat|res|rodata)\\b'
         match:  '(\\.)\\b(?i:lbl|lint|logical|long|macro|mansiz|namespace|next|null|offs|option|page|pend|proc|proff|pron|ptext|rept|rta)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
       # 64tass control commands, S through Z
       {
-        # match:  '(\\.)\\b(?i:scope|segment|set(cpu)?|smart|struct|tag|undef(ine)?|union|warning|word|zeropage)\\b'
-        match:  '(\\.)\\b(?i:section|seed|segment|send|shift|shiftl|showmac|sint|struct|switch|text|union|var|virtual|warn)\\b'
+        match:  '(\\.)\\b(?i:section|seed|segment|send|shift|shiftl|showmac|sint|struct|switch|text|union|var|virtual|warn|word)\\b'
         name:   'support.function.pseudo.64tass-directives'
       }
       # CPU constants
@@ -114,7 +103,6 @@ repository:
       }
       # Built-in functions
       {
-        # match:  '\\b(?i:direct|zeropage|zp|absolute|abs|near|far|long|dword|atari|cbm|cpu|generic|longbranch)\\b'
         match:  '\\b(?i:abs|acos|all|any|asin|atan|atan2|binary|cbrt|ceil|cos|cosh|deg|exp|floor|format|frac|hypot|len|log|log10|pow|rad|random|range|repr|round|sign|sin|sinh|size|sort|sqrt|tan|tanh|trunc)\\b'
         name:   'constant.language.64tass-directives'
       }
